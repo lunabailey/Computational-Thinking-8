@@ -1,0 +1,39 @@
+introvert_points = 0
+extrovert_points = 0
+
+answer = input("on the weekends do you like to A) chill at home, or B) go out with friends?/n")
+if answer == "A":
+    introvert_points += 1
+elif answer == "B":
+    extrovert_points += 1
+
+answer = input("when you are at a new place would you like to A) go home, or B) make friends with the people there?/n")
+if answer == "A":
+    introvert_points += 1
+elif answer == "B":
+    extrovert_points += 1
+
+answer = input("do you like being alone? A) yes, or B) nope/n")
+if answer == "A":
+    introvert_points += 1
+elif answer == "B":
+    extrovert_points += 1
+
+answer = input("when you are about to say something do you A) think before speaking, or B) just say it/n")
+if answer == "A":
+    introvert_points += 1
+elif answer == "B":
+    extrovert_points += 1
+
+answer = input("when you have a group project at school do you A) decide to work alone, or B) work with a group/n")
+if answer == "A":
+    introvert_points += 1
+elif answer == "B":
+    extrovert_points += 1
+
+if introvert_points > extrovert_points:
+    print("you are an introvert!")
+elif extrovert_points > introvert_points:
+    print("you are an extrovert!")
+elif introvert_points == extrovert_points:
+    print("you are both an introvert and an extrovert at times!")
